@@ -2,10 +2,21 @@
 <html lang="th">
 <head>
   <meta charset="UTF-8">
-  <title>Hello World</title>
+  <title>Hello + Counter</title>
 </head>
 <body>
   <h1>Hello World</h1>
-  <p>ย่อหน้าแรก</p>
+  <p>Demo สำหรับฝึก Branch → PR</p>
+
+  <button id="btn">Click me</button>
+  <p id="count">0</p>
+
+  <script>
+    let c = 0;
+    document.getElementById('btn').onclick = () => {
+      c++;
+      document.getElementById('count').innerText = c;
+    };
+  </script>
 </body>
 </html>
